@@ -2,6 +2,8 @@
 
 Ryan J. Corbett, Cricket C. Gullickson, Zhuangzhuang Geng, Miguel A. Brown, Bo Zhang, Chuwei Zhong, Nicholas Van Kuren, Antonia Chroni, Christopher Blackden, Ammar S. Naqvi, Alexa Plisiewicz, Sean McHugh, Emmett Drake, Kaitlin Lehmann, Tom B. Davidson, Michael Prados, Phillip B. Storm, Adam C. Resnick, Angela J. Waanders, Sebastian M. Waszak, Sabine Mueller, Jo Lynne Rokita, Cassie Kline
 
+Preprint available on [MedRxiv](https://www.medrxiv.org/content/10.1101/2024.06.14.24308885v1).
+
 ### To reproduce the code in this repository
 
 1. Clone the repository:
