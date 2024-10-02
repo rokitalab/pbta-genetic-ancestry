@@ -4,7 +4,8 @@ Ryan J. Corbett, Cricket C. Gullickson, Zhuangzhuang Geng, Miguel A. Brown, Bo Z
 
 Preprint available on [MedRxiv](https://www.medrxiv.org/content/10.1101/2024.06.14.24308885v1).
 
-Note: this repository is a continuation of the work started in https://github.com/d3b-center/pbta-ancestry.
+Note: this repository is a continuation of the work started at the Center for Data-Driven Discovery and the Center for Childhood Cancer Research at CHOP.
+For issue and pull request history, please visit https://github.com/d3b-center/pbta-ancestry.
 
 ### To reproduce the code in this repository
 
