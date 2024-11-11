@@ -2910,18 +2910,18 @@ library(ggpubr)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoibGlicmFyeSh0aWR5dmVyc2UpIn0= -->
 <pre class="r"><code>library(tidyverse)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-message-begin eyJkYXRhIjoiLS0gQXR0YWNoaW5nIGNvcmUgdGlkeXZlcnNlIHBhY2thZ2VzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gdGlkeXZlcnNlIDIuMC4wIC0tXG52IGRwbHlyICAgICAxLjEuNCAgICAgdiByZWFkciAgICAgMi4xLjVcbnYgZm9yY2F0cyAgIDEuMC4wICAgICB2IHN0cmluZ3IgICAxLjUuMVxudiBsdWJyaWRhdGUgMS45LjMgICAgIHYgdGliYmxlICAgIDMuMi4xXG52IHB1cnJyICAgICAxLjAuMiAgICAgdiB0aWR5ciAgICAgMS4zLjFcbiJ9 -->
-<pre><code>-- Attaching core tidyverse packages ---------------------------------------------------------- tidyverse 2.0.0 --
-v dplyr     1.1.4     v readr     2.1.5
-v forcats   1.0.0     v stringr   1.5.1
-v lubridate 1.9.3     v tibble    3.2.1
-v purrr     1.0.2     v tidyr     1.3.1</code></pre>
+<!-- rnb-message-begin eyJkYXRhIjoi4pSA4pSAIEF0dGFjaGluZyBjb3JlIHRpZHl2ZXJzZSBwYWNrYWdlcyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlIDIuMC4wIOKUgOKUgFxu4pyUIGRwbHlyICAgICAxLjEuNCAgICAg4pyUIHJlYWRyICAgICAyLjEuNVxu4pyUIGZvcmNhdHMgICAxLjAuMCAgICAg4pyUIHN0cmluZ3IgICAxLjUuMVxu4pyUIGx1YnJpZGF0ZSAxLjkuMyAgICAg4pyUIHRpYmJsZSAgICAzLjIuMVxu4pyUIHB1cnJyICAgICAxLjAuMiAgICAg4pyUIHRpZHlyICAgICAxLjMuMVxuIn0= -->
+<pre><code>── Attaching core tidyverse packages ──────────────────────────────────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.1</code></pre>
 <!-- rnb-message-end -->
-<!-- rnb-message-begin eyJkYXRhIjoiLS0gQ29uZmxpY3RzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gdGlkeXZlcnNlX2NvbmZsaWN0cygpIC0tXG54IGRwbHlyOjpmaWx0ZXIoKSBtYXNrcyBzdGF0czo6ZmlsdGVyKClcbnggZHBseXI6OmxhZygpICAgIG1hc2tzIHN0YXRzOjpsYWcoKVxuaSBVc2UgdGhlIGNvbmZsaWN0ZWQgcGFja2FnZSAoPGh0dHA6Ly9jb25mbGljdGVkLnItbGliLm9yZy8+KSB0byBmb3JjZSBhbGwgY29uZmxpY3RzIHRvIGJlY29tZSBlcnJvcnNcbiJ9 -->
-<pre><code>-- Conflicts ---------------------------------------------------------------------------- tidyverse_conflicts() --
-x dplyr::filter() masks stats::filter()
-x dplyr::lag()    masks stats::lag()
-i Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+<!-- rnb-message-begin eyJkYXRhIjoi4pSA4pSAIENvbmZsaWN0cyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlX2NvbmZsaWN0cygpIOKUgOKUgFxu4pyWIGRwbHlyOjpmaWx0ZXIoKSBtYXNrcyBzdGF0czo6ZmlsdGVyKClcbuKcliBkcGx5cjo6bGFnKCkgICAgbWFza3Mgc3RhdHM6OmxhZygpXG7ihLkgVXNlIHRoZSBjb25mbGljdGVkIHBhY2thZ2UgKDxodHRwOi8vY29uZmxpY3RlZC5yLWxpYi5vcmcvPikgdG8gZm9yY2UgYWxsIGNvbmZsaWN0cyB0byBiZWNvbWUgZXJyb3JzXG4ifQ== -->
+<pre><code>── Conflicts ────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 <!-- rnb-message-end -->
 <!-- rnb-source-begin eyJkYXRhIjpbIiMgU2V0IGRpcmVjdG9yaWVzIiwicm9vdF9kaXIgPC0gcnByb2pyb290OjpmaW5kX3Jvb3QocnByb2pyb290OjpoYXNfZGlyKFwiLmdpdFwiKSkiLCJkYXRhX2RpciA8LSBmaWxlLnBhdGgocm9vdF9kaXIsIFwiZGF0YVwiKSIsImFuYWx5c2lzX2RpciA8LSBmaWxlLnBhdGgocm9vdF9kaXIsIFwiYW5hbHlzZXNcIiwgXCJzdXJ2aXZhbFwiKSIsIiIsImlucHV0X2RpciA8LSBmaWxlLnBhdGgoYW5hbHlzaXNfZGlyLCBcImlucHV0XCIpIiwicmVzdWx0c19kaXIgPC0gZmlsZS5wYXRoKGFuYWx5c2lzX2RpciwgXCJyZXN1bHRzXCIpIiwiIiwiaWYgKCFkaXIuZXhpc3RzKHJlc3VsdHNfZGlyKSkge1xuICBkaXIuY3JlYXRlKHJlc3VsdHNfZGlyKVxufSJdfQ== -->
 <pre class="r"><code># Set directories
@@ -2960,16 +2960,16 @@ histologies</h2>
 <!-- rnb-source-begin eyJkYXRhIjoiYW5jZXN0cnkgPC0gcmVhZHI6OnJlYWRfdHN2KGFuY2VzdHJ5X2ZpbGUpIn0= -->
 <pre class="r"><code>ancestry &lt;- readr::read_tsv(ancestry_file)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-message-begin eyJkYXRhIjoiUm93czogMTQ1NCBDb2x1bW5zOiAzNVxuLS0gQ29sdW1uIHNwZWNpZmljYXRpb24gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG5EZWxpbWl0ZXI6IFwiXFx0XCJcbmNociAoMTkpOiBLaWRzX0ZpcnN0X0Jpb3NwZWNpbWVuX0lELCBwcmVkaWN0ZWRfYW5jZXN0cnksIEtpZHNfRmlyc3RfUGFydGljaXAuLi5cbmRibCAoMTUpOiBFQVNfcHJvYiwgQUZSX3Byb2IsIEFNUl9wcm9iLCBTQVNfcHJvYiwgRVVSX3Byb2IsIFBDMSwgUEMyLCBQQzMsIFAuLi5cbmxnbCAgKDEpOiBnaXZlbl9hbmNlc3RyeVxuXG5pIFVzZSBgc3BlYygpYCB0byByZXRyaWV2ZSB0aGUgZnVsbCBjb2x1bW4gc3BlY2lmaWNhdGlvbiBmb3IgdGhpcyBkYXRhLlxuaSBTcGVjaWZ5IHRoZSBjb2x1bW4gdHlwZXMgb3Igc2V0IGBzaG93X2NvbF90eXBlcyA9IEZBTFNFYCB0byBxdWlldCB0aGlzIG1lc3NhZ2UuXG4ifQ== -->
+<!-- rnb-message-begin eyJkYXRhIjoiUm93czogMTQ1NCBDb2x1bW5zOiAzNVxu4pSA4pSAIENvbHVtbiBzcGVjaWZpY2F0aW9uIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgFxuRGVsaW1pdGVyOiBcIlxcdFwiXG5jaHIgKDE5KTogS2lkc19GaXJzdF9CaW9zcGVjaW1lbl9JRCwgcHJlZGljdGVkX2FuY2VzdHJ5LCBLaWRzX0ZpcnN0X1BhcnRpY2lwLi4uXG5kYmwgKDE1KTogRUFTX3Byb2IsIEFGUl9wcm9iLCBBTVJfcHJvYiwgU0FTX3Byb2IsIEVVUl9wcm9iLCBQQzEsIFBDMiwgUEMzLCBQLi4uXG5sZ2wgICgxKTogZ2l2ZW5fYW5jZXN0cnlcblxu4oS5IFVzZSBgc3BlYygpYCB0byByZXRyaWV2ZSB0aGUgZnVsbCBjb2x1bW4gc3BlY2lmaWNhdGlvbiBmb3IgdGhpcyBkYXRhLlxu4oS5IFNwZWNpZnkgdGhlIGNvbHVtbiB0eXBlcyBvciBzZXQgYHNob3dfY29sX3R5cGVzID0gRkFMU0VgIHRvIHF1aWV0IHRoaXMgbWVzc2FnZS5cbiJ9 -->
 <pre><code>Rows: 1454 Columns: 35
--- Column specification ------------------------------------------------------------------------------------------
+── Column specification ────────────────────────────────────────────────────────────────────────────────────
 Delimiter: &quot;\t&quot;
 chr (19): Kids_First_Biospecimen_ID, predicted_ancestry, Kids_First_Particip...
 dbl (15): EAS_prob, AFR_prob, AMR_prob, SAS_prob, EUR_prob, PC1, PC2, PC3, P...
 lgl  (1): given_ancestry
 
-i Use `spec()` to retrieve the full column specification for this data.
-i Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 <!-- rnb-message-end -->
 <!-- rnb-source-begin eyJkYXRhIjpbIiMgc3Vydml2YWwgPC0gcmVhZF90c3Yoc3Vydml2YWxfZmlsZSkiLCIiLCJhbmNlc3RyeSA8LSBhbmNlc3RyeSAlPiVcbiAgIyBsZWZ0X2pvaW4oc3Vydml2YWxbLGMoXCJLaWRzX0ZpcnN0X1BhcnRpY2lwYW50X0lEXCIsIFwiT1NfZGF5c1wiLCBcIk9TX3N0YXR1c1wiLCBcIkVGU19kYXlzXCIsIFwiRUZTX2V2ZW50X3R5cGVcIildKSAlPiVcbiAgIyBkaXN0aW5jdChLaWRzX0ZpcnN0X1BhcnRpY2lwYW50X0lELCAua2VlcF9hbGwgPSBUKSAlPiVcbiAgZHBseXI6Om11dGF0ZShFRlNfZGF5cyA9IGFzLm51bWVyaWMoRUZTX2RheXMpLFxuICAgICAgICAgICAgICAgIE9TX2RheXMgPSBhcy5udW1lcmljKE9TX2RheXMpKSAlPiVcbiAgZHBseXI6Om11dGF0ZShPU195ZWFycyA9IE9TX2RheXMvMzY1LjI1LFxuICAgICAgICAgRUZTX3llYXJzID0gRUZTX2RheXMvMzY1LjI1KSAlPiVcbiAgZHBseXI6Om11dGF0ZShFRlNfc3RhdHVzID0gY2FzZV93aGVuKFxuICAgIEVGU19ldmVudF90eXBlID09IFwiTm90IEFwcGxpY2FibGVcIiB+IFwiTk8gRVZFTlRcIixcbiAgICAhaXMubmEoRUZTX2V2ZW50X3R5cGUpIH4gXCJFVkVOVFwiLFxuICAgIFRSVUUgfiBOQV9jaGFyYWN0ZXJfXG4gICkpICU+JVxuICBkcGx5cjo6bXV0YXRlKEVVUl9zdGF0dXMgPSBjYXNlX3doZW4oXG4gICAgcHJlZGljdGVkX2FuY2VzdHJ5ID09IFwiRVVSXCIgfiBcIkVVUlwiLCBcbiAgICBUUlVFIH4gXCJub24tRVVSXCJcbiAgKSkiXX0= -->
 <pre class="r"><code># survival &lt;- read_tsv(survival_file)
@@ -3038,7 +3038,7 @@ ancestry &lt;- ancestry %&gt;%
 <!-- rnb-source-begin eyJkYXRhIjoic2Vzc2lvbkluZm8oKSJ9 -->
 <pre class="r"><code>sessionInfo()</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUiB2ZXJzaW9uIDQuNC4wICgyMDI0LTA0LTI0KVxuUGxhdGZvcm06IHg4Nl82NC1wYy1saW51eC1nbnVcblJ1bm5pbmcgdW5kZXI6IFVidW50dSAyMi4wNC40IExUU1xuXG5NYXRyaXggcHJvZHVjdHM6IGRlZmF1bHRcbkJMQVM6ICAgL3Vzci9saWIveDg2XzY0LWxpbnV4LWdudS9vcGVuYmxhcy1wdGhyZWFkL2xpYmJsYXMuc28uMyBcbkxBUEFDSzogL3Vzci9saWIveDg2XzY0LWxpbnV4LWdudS9vcGVuYmxhcy1wdGhyZWFkL2xpYm9wZW5ibGFzcC1yMC4zLjIwLnNvOyAgTEFQQUNLIHZlcnNpb24gMy4xMC4wXG5cbmxvY2FsZTpcblsxXSBDXG5cbnRpbWUgem9uZTogRXRjL1VUQ1xudHpjb2RlIHNvdXJjZTogc3lzdGVtIChnbGliYylcblxuYXR0YWNoZWQgYmFzZSBwYWNrYWdlczpcblsxXSBzdGF0cyAgICAgZ3JhcGhpY3MgIGdyRGV2aWNlcyB1dGlscyAgICAgZGF0YXNldHMgIG1ldGhvZHMgICBiYXNlICAgICBcblxub3RoZXIgYXR0YWNoZWQgcGFja2FnZXM6XG4gWzFdIGx1YnJpZGF0ZV8xLjkuMyBmb3JjYXRzXzEuMC4wICAgc3RyaW5ncl8xLjUuMSAgIGRwbHlyXzEuMS40ICAgIFxuIFs1XSBwdXJycl8xLjAuMiAgICAgcmVhZHJfMi4xLjUgICAgIHRpZHlyXzEuMy4xICAgICB0aWJibGVfMy4yLjEgICBcbiBbOV0gdGlkeXZlcnNlXzIuMC4wIGdncHVicl8wLjYuMCAgICBnZ3Bsb3QyXzMuNS4xICAgc3Vydml2YWxfMy42LTQgXG5cbmxvYWRlZCB2aWEgYSBuYW1lc3BhY2UgKGFuZCBub3QgYXR0YWNoZWQpOlxuIFsxXSBzYXNzXzAuNC45ICAgICAgICB1dGY4XzEuMi40ICAgICAgICBnZW5lcmljc18wLjEuMyAgICByc3RhdGl4XzAuNy4yICAgIFxuIFs1XSBzdHJpbmdpXzEuOC4zICAgICBsYXR0aWNlXzAuMjItNiAgICBobXNfMS4xLjMgICAgICAgICBkaWdlc3RfMC42LjM1ICAgIFxuIFs5XSBtYWdyaXR0cl8yLjAuMyAgICB0aW1lY2hhbmdlXzAuMy4wICBldmFsdWF0ZV8wLjIzICAgICBncmlkXzQuNC4wICAgICAgIFxuWzEzXSBmYXN0bWFwXzEuMS4xICAgICBycHJvanJvb3RfMi4wLjQgICBqc29ubGl0ZV8xLjguOCAgICBNYXRyaXhfMS43LTAgICAgIFxuWzE3XSBiYWNrcG9ydHNfMS40LjEgICBmYW5zaV8xLjAuNiAgICAgICBzY2FsZXNfMS4zLjAgICAgICBqcXVlcnlsaWJfMC4xLjQgIFxuWzIxXSBhYmluZF8xLjQtNSAgICAgICBjbGlfMy42LjIgICAgICAgICBjcmF5b25fMS41LjIgICAgICBybGFuZ18xLjEuMyAgICAgIFxuWzI1XSBiaXQ2NF80LjAuNSAgICAgICBtdW5zZWxsXzAuNS4xICAgICBzcGxpbmVzXzQuNC4wICAgICB3aXRocl8zLjAuMCAgICAgIFxuWzI5XSBjYWNoZW1fMS4wLjggICAgICB5YW1sXzIuMy44ICAgICAgICBwYXJhbGxlbF80LjQuMCAgICB0b29sc180LjQuMCAgICAgIFxuWzMzXSB0emRiXzAuNC4wICAgICAgICBnZ3NpZ25pZl8wLjYuNCAgICBjb2xvcnNwYWNlXzIuMS0wICBicm9vbV8xLjAuNSAgICAgIFxuWzM3XSB2Y3Ryc18wLjYuNSAgICAgICBSNl8yLjUuMSAgICAgICAgICBsaWZlY3ljbGVfMS4wLjQgICBiaXRfNC4wLjUgICAgICAgIFxuWzQxXSBjYXJfMy4xLTIgICAgICAgICB2cm9vbV8xLjYuNSAgICAgICBwa2djb25maWdfMi4wLjMgICBwaWxsYXJfMS45LjAgICAgIFxuWzQ1XSBic2xpYl8wLjcuMCAgICAgICBndGFibGVfMC4zLjUgICAgICBnbHVlXzEuNy4wICAgICAgICB4ZnVuXzAuNDMgICAgICAgIFxuWzQ5XSB0aWR5c2VsZWN0XzEuMi4xICBrbml0cl8xLjQ2ICAgICAgICBodG1sdG9vbHNfMC41LjguMSBybWFya2Rvd25fMi4yNiAgIFxuWzUzXSBjYXJEYXRhXzMuMC01ICAgICBjb21waWxlcl80LjQuMCAgIFxuIn0= -->
+<!-- rnb-output-begin eyJkYXRhIjoiUiB2ZXJzaW9uIDQuNC4wICgyMDI0LTA0LTI0KVxuUGxhdGZvcm06IHg4Nl82NC1wYy1saW51eC1nbnVcblJ1bm5pbmcgdW5kZXI6IFVidW50dSAyMi4wNC40IExUU1xuXG5NYXRyaXggcHJvZHVjdHM6IGRlZmF1bHRcbkJMQVM6ICAgL3Vzci9saWIveDg2XzY0LWxpbnV4LWdudS9vcGVuYmxhcy1wdGhyZWFkL2xpYmJsYXMuc28uMyBcbkxBUEFDSzogL3Vzci9saWIveDg2XzY0LWxpbnV4LWdudS9vcGVuYmxhcy1wdGhyZWFkL2xpYm9wZW5ibGFzcC1yMC4zLjIwLnNvOyAgTEFQQUNLIHZlcnNpb24gMy4xMC4wXG5cbmxvY2FsZTpcbiBbMV0gTENfQ1RZUEU9ZW5fVVMuVVRGLTggICAgICAgTENfTlVNRVJJQz1DICAgICAgICAgICAgICBcbiBbM10gTENfVElNRT1lbl9VUy5VVEYtOCAgICAgICAgTENfQ09MTEFURT1lbl9VUy5VVEYtOCAgICBcbiBbNV0gTENfTU9ORVRBUlk9ZW5fVVMuVVRGLTggICAgTENfTUVTU0FHRVM9ZW5fVVMuVVRGLTggICBcbiBbN10gTENfUEFQRVI9ZW5fVVMuVVRGLTggICAgICAgTENfTkFNRT1DICAgICAgICAgICAgICAgICBcbiBbOV0gTENfQUREUkVTUz1DICAgICAgICAgICAgICAgTENfVEVMRVBIT05FPUMgICAgICAgICAgICBcblsxMV0gTENfTUVBU1VSRU1FTlQ9ZW5fVVMuVVRGLTggTENfSURFTlRJRklDQVRJT049QyAgICAgICBcblxudGltZSB6b25lOiBFdGMvVVRDXG50emNvZGUgc291cmNlOiBzeXN0ZW0gKGdsaWJjKVxuXG5hdHRhY2hlZCBiYXNlIHBhY2thZ2VzOlxuWzFdIHN0YXRzICAgICBncmFwaGljcyAgZ3JEZXZpY2VzIHV0aWxzICAgICBkYXRhc2V0cyAgbWV0aG9kcyAgIGJhc2UgICAgIFxuXG5vdGhlciBhdHRhY2hlZCBwYWNrYWdlczpcbiBbMV0gbHVicmlkYXRlXzEuOS4zIGZvcmNhdHNfMS4wLjAgICBzdHJpbmdyXzEuNS4xICAgZHBseXJfMS4xLjQgICAgXG4gWzVdIHB1cnJyXzEuMC4yICAgICByZWFkcl8yLjEuNSAgICAgdGlkeXJfMS4zLjEgICAgIHRpYmJsZV8zLjIuMSAgIFxuIFs5XSB0aWR5dmVyc2VfMi4wLjAgZ2dwdWJyXzAuNi4wICAgIGdncGxvdDJfMy41LjEgICBzdXJ2aXZhbF8zLjctMCBcblxubG9hZGVkIHZpYSBhIG5hbWVzcGFjZSAoYW5kIG5vdCBhdHRhY2hlZCk6XG4gWzFdIHNhc3NfMC40LjkgICAgICAgIHV0ZjhfMS4yLjQgICAgICAgIGdlbmVyaWNzXzAuMS4zICAgIHJzdGF0aXhfMC43LjIgICAgXG4gWzVdIHN0cmluZ2lfMS44LjQgICAgIGxhdHRpY2VfMC4yMi02ICAgIGhtc18xLjEuMyAgICAgICAgIGRpZ2VzdF8wLjYuMzUgICAgXG4gWzldIG1hZ3JpdHRyXzIuMC4zICAgIHRpbWVjaGFuZ2VfMC4zLjAgIGV2YWx1YXRlXzAuMjQuMCAgIGdyaWRfNC40LjAgICAgICAgXG5bMTNdIGZhc3RtYXBfMS4yLjAgICAgIHJwcm9qcm9vdF8yLjAuNCAgIGpzb25saXRlXzEuOC44ICAgIE1hdHJpeF8xLjctMCAgICAgXG5bMTddIGJhY2twb3J0c18xLjUuMCAgIGZhbnNpXzEuMC42ICAgICAgIHNjYWxlc18xLjMuMCAgICAgIGpxdWVyeWxpYl8wLjEuNCAgXG5bMjFdIGFiaW5kXzEuNC01ICAgICAgIGNsaV8zLjYuMiAgICAgICAgIGNyYXlvbl8xLjUuMiAgICAgIHJsYW5nXzEuMS40ICAgICAgXG5bMjVdIGJpdDY0XzQuMC41ICAgICAgIG11bnNlbGxfMC41LjEgICAgIHNwbGluZXNfNC40LjAgICAgIHdpdGhyXzMuMC4wICAgICAgXG5bMjldIGNhY2hlbV8xLjEuMCAgICAgIHlhbWxfMi4zLjggICAgICAgIHBhcmFsbGVsXzQuNC4wICAgIHRvb2xzXzQuNC4wICAgICAgXG5bMzNdIHR6ZGJfMC40LjAgICAgICAgIGdnc2lnbmlmXzAuNi40ICAgIGNvbG9yc3BhY2VfMi4xLTAgIGJyb29tXzEuMC42ICAgICAgXG5bMzddIHZjdHJzXzAuNi41ICAgICAgIFI2XzIuNS4xICAgICAgICAgIGxpZmVjeWNsZV8xLjAuNCAgIGJpdF80LjAuNSAgICAgICAgXG5bNDFdIGNhcl8zLjEtMiAgICAgICAgIHZyb29tXzEuNi41ICAgICAgIHBrZ2NvbmZpZ18yLjAuMyAgIHBpbGxhcl8xLjkuMCAgICAgXG5bNDVdIGJzbGliXzAuNy4wICAgICAgIGd0YWJsZV8wLjMuNSAgICAgIGdsdWVfMS43LjAgICAgICAgIHhmdW5fMC40NCAgICAgICAgXG5bNDldIHRpZHlzZWxlY3RfMS4yLjEgIGtuaXRyXzEuNDcgICAgICAgIGh0bWx0b29sc18wLjUuOC4xIHJtYXJrZG93bl8yLjI3ICAgXG5bNTNdIGNhckRhdGFfMy4wLTUgICAgIGNvbXBpbGVyXzQuNC4wICAgXG4ifQ== -->
 <pre><code>R version 4.4.0 (2024-04-24)
 Platform: x86_64-pc-linux-gnu
 Running under: Ubuntu 22.04.4 LTS
@@ -3048,7 +3048,12 @@ BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
 LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so;  LAPACK version 3.10.0
 
 locale:
-[1] C
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
 
 time zone: Etc/UTC
 tzcode source: system (glibc)
@@ -3059,22 +3064,22 @@ attached base packages:
 other attached packages:
  [1] lubridate_1.9.3 forcats_1.0.0   stringr_1.5.1   dplyr_1.1.4    
  [5] purrr_1.0.2     readr_2.1.5     tidyr_1.3.1     tibble_3.2.1   
- [9] tidyverse_2.0.0 ggpubr_0.6.0    ggplot2_3.5.1   survival_3.6-4 
+ [9] tidyverse_2.0.0 ggpubr_0.6.0    ggplot2_3.5.1   survival_3.7-0 
 
 loaded via a namespace (and not attached):
  [1] sass_0.4.9        utf8_1.2.4        generics_0.1.3    rstatix_0.7.2    
- [5] stringi_1.8.3     lattice_0.22-6    hms_1.1.3         digest_0.6.35    
- [9] magrittr_2.0.3    timechange_0.3.0  evaluate_0.23     grid_4.4.0       
-[13] fastmap_1.1.1     rprojroot_2.0.4   jsonlite_1.8.8    Matrix_1.7-0     
-[17] backports_1.4.1   fansi_1.0.6       scales_1.3.0      jquerylib_0.1.4  
-[21] abind_1.4-5       cli_3.6.2         crayon_1.5.2      rlang_1.1.3      
+ [5] stringi_1.8.4     lattice_0.22-6    hms_1.1.3         digest_0.6.35    
+ [9] magrittr_2.0.3    timechange_0.3.0  evaluate_0.24.0   grid_4.4.0       
+[13] fastmap_1.2.0     rprojroot_2.0.4   jsonlite_1.8.8    Matrix_1.7-0     
+[17] backports_1.5.0   fansi_1.0.6       scales_1.3.0      jquerylib_0.1.4  
+[21] abind_1.4-5       cli_3.6.2         crayon_1.5.2      rlang_1.1.4      
 [25] bit64_4.0.5       munsell_0.5.1     splines_4.4.0     withr_3.0.0      
-[29] cachem_1.0.8      yaml_2.3.8        parallel_4.4.0    tools_4.4.0      
-[33] tzdb_0.4.0        ggsignif_0.6.4    colorspace_2.1-0  broom_1.0.5      
+[29] cachem_1.1.0      yaml_2.3.8        parallel_4.4.0    tools_4.4.0      
+[33] tzdb_0.4.0        ggsignif_0.6.4    colorspace_2.1-0  broom_1.0.6      
 [37] vctrs_0.6.5       R6_2.5.1          lifecycle_1.0.4   bit_4.0.5        
 [41] car_3.1-2         vroom_1.6.5       pkgconfig_2.0.3   pillar_1.9.0     
-[45] bslib_0.7.0       gtable_0.3.5      glue_1.7.0        xfun_0.43        
-[49] tidyselect_1.2.1  knitr_1.46        htmltools_0.5.8.1 rmarkdown_2.26   
+[45] bslib_0.7.0       gtable_0.3.5      glue_1.7.0        xfun_0.44        
+[49] tidyselect_1.2.1  knitr_1.47        htmltools_0.5.8.1 rmarkdown_2.27   
 [53] carData_3.0-5     compiler_4.4.0   </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->

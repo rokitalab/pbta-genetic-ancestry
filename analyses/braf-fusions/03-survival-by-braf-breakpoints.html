@@ -431,31 +431,31 @@ breakpoint fusion type in PBTA ancestry cohort</h1>
 <p>Load libraries and set directories</p>
 <pre class="r"><code>library(data.table)
 library(tidyverse)</code></pre>
-<pre><code>## -- Attaching core tidyverse packages ---------------------------------------------------------- tidyverse 2.0.0 --
-## v dplyr     1.1.4     v readr     2.1.5
-## v forcats   1.0.0     v stringr   1.5.1
-## v ggplot2   3.5.1     v tibble    3.2.1
-## v lubridate 1.9.3     v tidyr     1.3.1
-## v purrr     1.0.2     
-## -- Conflicts ---------------------------------------------------------------------------- tidyverse_conflicts() --
-## x dplyr::between()     masks data.table::between()
-## x dplyr::filter()      masks stats::filter()
-## x dplyr::first()       masks data.table::first()
-## x lubridate::hour()    masks data.table::hour()
-## x lubridate::isoweek() masks data.table::isoweek()
-## x dplyr::lag()         masks stats::lag()
-## x dplyr::last()        masks data.table::last()
-## x lubridate::mday()    masks data.table::mday()
-## x lubridate::minute()  masks data.table::minute()
-## x lubridate::month()   masks data.table::month()
-## x lubridate::quarter() masks data.table::quarter()
-## x lubridate::second()  masks data.table::second()
-## x purrr::transpose()   masks data.table::transpose()
-## x lubridate::wday()    masks data.table::wday()
-## x lubridate::week()    masks data.table::week()
-## x lubridate::yday()    masks data.table::yday()
-## x lubridate::year()    masks data.table::year()
-## i Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+<pre><code>## ── Attaching core tidyverse packages ──────────────────────────────────────────────────── tidyverse 2.0.0 ──
+## ✔ dplyr     1.1.4     ✔ readr     2.1.5
+## ✔ forcats   1.0.0     ✔ stringr   1.5.1
+## ✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+## ✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+## ✔ purrr     1.0.2     
+## ── Conflicts ────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::between()     masks data.table::between()
+## ✖ dplyr::filter()      masks stats::filter()
+## ✖ dplyr::first()       masks data.table::first()
+## ✖ lubridate::hour()    masks data.table::hour()
+## ✖ lubridate::isoweek() masks data.table::isoweek()
+## ✖ dplyr::lag()         masks stats::lag()
+## ✖ dplyr::last()        masks data.table::last()
+## ✖ lubridate::mday()    masks data.table::mday()
+## ✖ lubridate::minute()  masks data.table::minute()
+## ✖ lubridate::month()   masks data.table::month()
+## ✖ lubridate::quarter() masks data.table::quarter()
+## ✖ lubridate::second()  masks data.table::second()
+## ✖ purrr::transpose()   masks data.table::transpose()
+## ✖ lubridate::wday()    masks data.table::wday()
+## ✖ lubridate::week()    masks data.table::week()
+## ✖ lubridate::yday()    masks data.table::yday()
+## ✖ lubridate::year()    masks data.table::year()
+## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 <pre class="r"><code>library(survival)
 library(patchwork)
 
@@ -482,7 +482,7 @@ source(file.path(root_dir, &quot;analyses&quot;, &quot;survival&quot;, &quot;uti
 columns</p>
 <pre class="r"><code>braf_hist &lt;- read_tsv(hist_file)</code></pre>
 <pre><code>## Rows: 172 Columns: 49
-## ── Column specification ──────────────────────────────────────────────────────────────────────────────────────────
+## ── Column specification ────────────────────────────────────────────────────────────────────────────────────
 ## Delimiter: &quot;\t&quot;
 ## chr  (28): Kids_First_Biospecimen_ID_normal, predicted_ancestry, Kids_First_...
 ## dbl  (18): EAS_prob, AFR_prob, AMR_prob, SAS_prob, EUR_prob, PC1, PC2, PC3, ...
@@ -750,10 +750,12 @@ covariates</p>
 ## LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so;  LAPACK version 3.10.0
 ## 
 ## locale:
-##  [1] LC_CTYPE=en_US.UTF-8    LC_NUMERIC=C            LC_TIME=en_US.UTF-8    
-##  [4] LC_COLLATE=en_US.UTF-8  LC_MONETARY=en_US.UTF-8 LC_MESSAGES=C          
-##  [7] LC_PAPER=C              LC_NAME=C               LC_ADDRESS=C           
-## [10] LC_TELEPHONE=C          LC_MEASUREMENT=C        LC_IDENTIFICATION=C    
+##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
 ## 
 ## time zone: Etc/UTC
 ## tzcode source: system (glibc)
@@ -762,31 +764,31 @@ covariates</p>
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] survminer_0.4.9   ggpubr_0.6.0      patchwork_1.2.0   survival_3.6-4   
+##  [1] survminer_0.4.9   ggpubr_0.6.0      patchwork_1.2.0   survival_3.7-0   
 ##  [5] lubridate_1.9.3   forcats_1.0.0     stringr_1.5.1     dplyr_1.1.4      
 ##  [9] purrr_1.0.2       readr_2.1.5       tidyr_1.3.1       tibble_3.2.1     
 ## [13] ggplot2_3.5.1     tidyverse_2.0.0   data.table_1.15.4
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] gtable_0.3.5      xfun_0.43         bslib_0.7.0       rstatix_0.7.2    
+##  [1] gtable_0.3.5      xfun_0.44         bslib_0.7.0       rstatix_0.7.2    
 ##  [5] lattice_0.22-6    tzdb_0.4.0        vctrs_0.6.5       tools_4.4.0      
-##  [9] generics_0.1.3    parallel_4.4.0    fansi_1.0.6       highr_0.10       
-## [13] pkgconfig_2.0.3   Matrix_1.7-0      lifecycle_1.0.4   farver_2.1.1     
-## [17] compiler_4.4.0    textshaping_0.3.7 munsell_0.5.1     carData_3.0-5    
+##  [9] generics_0.1.3    parallel_4.4.0    fansi_1.0.6       highr_0.11       
+## [13] pkgconfig_2.0.3   Matrix_1.7-0      lifecycle_1.0.4   farver_2.1.2     
+## [17] compiler_4.4.0    textshaping_0.4.0 munsell_0.5.1     carData_3.0-5    
 ## [21] colorblindr_0.1.0 htmltools_0.5.8.1 sass_0.4.9        yaml_2.3.8       
 ## [25] crayon_1.5.2      pillar_1.9.0      car_3.1-2         jquerylib_0.1.4  
-## [29] cachem_1.0.8      abind_1.4-5       km.ci_0.5-6       commonmark_1.9.1 
-## [33] tidyselect_1.2.1  digest_0.6.35     stringi_1.8.3     labeling_0.4.3   
-## [37] splines_4.4.0     cowplot_1.1.3     rprojroot_2.0.4   fastmap_1.1.1    
+## [29] cachem_1.1.0      abind_1.4-5       km.ci_0.5-6       commonmark_1.9.1 
+## [33] tidyselect_1.2.1  digest_0.6.35     stringi_1.8.4     labeling_0.4.3   
+## [37] splines_4.4.0     cowplot_1.1.3     rprojroot_2.0.4   fastmap_1.2.0    
 ## [41] grid_4.4.0        colorspace_2.1-0  cli_3.6.2         magrittr_2.0.3   
-## [45] utf8_1.2.4        broom_1.0.5       withr_3.0.0       scales_1.3.0     
-## [49] backports_1.4.1   bit64_4.0.5       timechange_0.3.0  rmarkdown_2.26   
+## [45] utf8_1.2.4        broom_1.0.6       withr_3.0.0       scales_1.3.0     
+## [49] backports_1.5.0   bit64_4.0.5       timechange_0.3.0  rmarkdown_2.27   
 ## [53] ggtext_0.1.2      bit_4.0.5         gridExtra_2.3     ggsignif_0.6.4   
-## [57] ragg_1.3.0        zoo_1.8-12        hms_1.1.3         evaluate_0.23    
-## [61] knitr_1.46        KMsurv_0.1-5      markdown_1.12     survMisc_0.5.6   
-## [65] rlang_1.1.3       Rcpp_1.0.12       gridtext_0.1.5    xtable_1.8-4     
+## [57] ragg_1.3.2        zoo_1.8-12        hms_1.1.3         evaluate_0.24.0  
+## [61] knitr_1.47        KMsurv_0.1-5      markdown_1.13     survMisc_0.5.6   
+## [65] rlang_1.1.4       Rcpp_1.0.12       gridtext_0.1.5    xtable_1.8-4     
 ## [69] glue_1.7.0        xml2_1.3.6        vroom_1.6.5       jsonlite_1.8.8   
-## [73] R6_2.5.1          systemfonts_1.0.6</code></pre>
+## [73] R6_2.5.1          systemfonts_1.1.0</code></pre>
 
 
 

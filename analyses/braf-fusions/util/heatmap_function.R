@@ -24,8 +24,14 @@ plot_enr <- function(df, var1, var2,
       no_var2 <- sum(unlist(df[,var2]) == colnames(enr)[j] & !is.na(unlist(df[,var2])))
       no_var1_var2 <- sum(unlist(df[,var1]) == rownames(enr)[i] & unlist(df[,var2]) == colnames(enr)[j])
       ct[i,j] <- no_var1_var2
-      enr[i,j] <- (no_var1_var2/no_var2)/(no_var1/nrow(df))
-      pval[i,j] <- phyper(no_var1_var2, no_var1, nrow(df) - no_var1, no_var2, lower.tail = F)
+      or_mat <- matrix(c(no_var1_var2, no_var1-no_var1_var2,
+                         no_var2-no_var1_var2, 
+                         nrow(df)-no_var1-no_var2+no_var1_var2),
+                       2, 2)
+      enr[i,j] <- fisher.test(or_mat, alternative = "greater")$estimate
+      pval[i,j] <- phyper(no_var1_var2, no_var1,
+                          nrow(df) - no_var1, no_var2,
+                          lower.tail = FALSE)
     }
   }
   
@@ -45,6 +51,8 @@ plot_enr <- function(df, var1, var2,
   
   ct_enr_mat <- matrix(glue::glue("{ct}\n({fill_mat})"),
                        nrow(ct), ncol(ct))
+  
+  enr <- ifelse(is.infinite(enr), max(enr[!is.infinite(enr)])*1.25, enr)
   
   col_fun = colorRamp2(c(0, ceiling(max(enr))), c("white", "orangered"))
   
