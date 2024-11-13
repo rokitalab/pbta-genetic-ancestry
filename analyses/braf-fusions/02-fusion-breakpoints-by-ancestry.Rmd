@@ -396,7 +396,7 @@ diagnosis_ht = plot_enr(braf_hist, var1 = "diagnosis", var2 = "breakpoint_group"
                                         "pilocytic/pilomyxoid astrocytoma",
                                         "pilomyxoid astrocytoma"), 
                         var2_names = c("15:09", "16:09", "16:11", "18:10", "rare"),
-                         padjust = FALSE)
+                         padjust = TRUE)
 
 pdf(file.path(plot_dir, "lgg_braf_fusion_breakpoint_group_diagnosis_enr_heatmap.pdf"),
     width = 6, height = 3)
