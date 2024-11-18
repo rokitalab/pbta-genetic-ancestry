@@ -167,6 +167,10 @@ braf_hist <- braf_hist %>%
   dplyr::mutate(CNS_region = case_when(
     Kids_First_Participant_ID %in% cns_regions$Kids_First_Participant_ID ~ cns_regions$CNS_region[match(Kids_First_Participant_ID, cns_regions$Kids_First_Participant_ID)],
     TRUE ~ CNS_region
+  )) %>%
+  dplyr::mutate(extent_of_tumor_resection = case_when(
+    sample_id == "7316-436" ~ "Gross/Near total resection",
+    TRUE ~ extent_of_tumor_resection
   ))
 ```
 
