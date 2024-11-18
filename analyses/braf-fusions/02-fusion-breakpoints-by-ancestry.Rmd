@@ -39,6 +39,8 @@ fusion_dgd_file <- file.path(data_dir, "fusion-dgd.tsv.gz")
 cohort_hist_file <- file.path(root_dir, "analyses", "survival", "results", "merged_ancestry_histology_survival.tsv")
 
 hist_file <- file.path(data_dir, "histologies.tsv")
+
+cns_region_file <- file.path(input_dir, "braf-fusion-mixed-region.tsv")
 ```
 
 Load data
@@ -155,6 +157,17 @@ braf_hist <- braf_hist %>%
   dplyr::filter(!is.na(breakpoint_type)) %>%
   left_join(hist[,c("Kids_First_Biospecimen_ID", "match_id")]) %>%
   left_join(scores)
+```
+
+For patients with CNS_region == "Mixed", update with manually reviewed regions from path reports
+```{r}
+cns_regions <- read_tsv(cns_region_file)
+
+braf_hist <- braf_hist %>%
+  dplyr::mutate(CNS_region = case_when(
+    Kids_First_Participant_ID %in% cns_regions$Kids_First_Participant_ID ~ cns_regions$CNS_region[match(Kids_First_Participant_ID, cns_regions$Kids_First_Participant_ID)],
+    TRUE ~ CNS_region
+  ))
 ```
 
 How many patients do we have breakpoint data for? 
