@@ -49,10 +49,13 @@ plot_enr <- function(df, var1, var2,
   fill_mat <- matrix(glue::glue("{round(enr, 1)}{sig_mat}"), 
                      nrow(enr), ncol(enr))
   
+  fill_mat <- matrix(str_replace_all(fill_mat, "Inf", "NR"), 
+                     nrow(enr), ncol(enr))
+  
+  enr <- ifelse(is.infinite(enr), 0, enr)
+  
   ct_enr_mat <- matrix(glue::glue("{ct}\n({fill_mat})"),
                        nrow(ct), ncol(ct))
-  
-  enr <- ifelse(is.infinite(enr), max(enr[!is.infinite(enr)])*1.25, enr)
   
   col_fun = colorRamp2(c(0, ceiling(max(enr))), c("white", "orangered"))
   
