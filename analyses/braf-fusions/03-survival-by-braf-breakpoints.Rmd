@@ -47,7 +47,8 @@ braf_hist <- braf_hist %>%
     TRUE ~ predicted_ancestry
   )) %>%
   dplyr::mutate(breakpoint_group = fct_relevel(breakpoint_group,
-                                               c("16:11", "15:09", "16:09", "18:10", "rare")))
+                                               c("16:11", "15:09", "16:09", "18:10", "rare"))) %>%
+  dplyr::mutate(age_at_diagnosis_years = age_at_diagnosis_days/365.25)
 ```
 
 Run Kaplan-Meier analysis of event-free survival by breakpoint type (common vs. rare)
@@ -233,6 +234,21 @@ braf_model_efs <- fit_save_model(braf_hist[braf_hist$extent_of_tumor_resection !
 plotForest(readRDS(file.path(results_dir, "coxph_braf_efs_add_resection_breakpoint_group.RDS")))
 
 ggsave(file.path(plot_dir, "pbta_ancestry_forest_efs_add_resection_breakpoint_group.pdf"),
+       width = 8, height = 3)
+
+```
+
+```{r}
+braf_model_efs <- fit_save_model(braf_hist[braf_hist$extent_of_tumor_resection != "Not Reported",],
+                                    terms = "extent_of_tumor_resection+breakpoint_group+age_at_diagnosis_years",
+               file.path(results_dir, "coxph_braf_efs_add_resection_breakpoint_group_age.RDS"),
+               "multivariate",
+               years_col = "EFS_years", status_col = "EFS_status"
+              )
+
+plotForest(readRDS(file.path(results_dir, "coxph_braf_efs_add_resection_breakpoint_group_age.RDS")))
+
+ggsave(file.path(plot_dir, "pbta_ancestry_forest_efs_add_resection_breakpoint_group_age.pdf"),
        width = 8, height = 3)
 
 ```
