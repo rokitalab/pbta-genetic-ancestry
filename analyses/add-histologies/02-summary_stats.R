@@ -297,13 +297,11 @@ ancestry <- ancestry %>%
                                                      "Unavailable/Unreported")))
 
 group_df <- data.frame(plot_group = c("Atypical Teratoid Rhabdoid Tumor",
-                                      "Craniopharyngioma",
                                       "Ependymoma", "Mixed neuronal-glial tumor",
                                       "Low-grade glioma", "Medulloblastoma",
-                                      "Mesenchymal tumor", "Other high-grade glioma",
-                                      "Schwannoma"),
-                       abbreviation = c("atrt", "cpg", "epn", "gnt", "lgg",
-                                        "mb", "mes", "hgg", "swn"))
+                                      "Mesenchymal tumor", "Other high-grade glioma"),
+                       abbreviation = c("atrt", "epn", "gnt", "lgg",
+                                        "mb", "mes", "hgg"))
 
 pdf(NULL)
 

@@ -432,31 +432,31 @@ in canonical transcripts</p>
 <p>Load libraries and set directories</p>
 <pre class="r"><code>library(data.table)
 library(tidyverse)</code></pre>
-<pre><code>## -- Attaching core tidyverse packages ---------------------------------------------------------- tidyverse 2.0.0 --
-## v dplyr     1.1.4     v readr     2.1.5
-## v forcats   1.0.0     v stringr   1.5.1
-## v ggplot2   3.5.1     v tibble    3.2.1
-## v lubridate 1.9.3     v tidyr     1.3.1
-## v purrr     1.0.2     
-## -- Conflicts ---------------------------------------------------------------------------- tidyverse_conflicts() --
-## x dplyr::between()     masks data.table::between()
-## x dplyr::filter()      masks stats::filter()
-## x dplyr::first()       masks data.table::first()
-## x lubridate::hour()    masks data.table::hour()
-## x lubridate::isoweek() masks data.table::isoweek()
-## x dplyr::lag()         masks stats::lag()
-## x dplyr::last()        masks data.table::last()
-## x lubridate::mday()    masks data.table::mday()
-## x lubridate::minute()  masks data.table::minute()
-## x lubridate::month()   masks data.table::month()
-## x lubridate::quarter() masks data.table::quarter()
-## x lubridate::second()  masks data.table::second()
-## x purrr::transpose()   masks data.table::transpose()
-## x lubridate::wday()    masks data.table::wday()
-## x lubridate::week()    masks data.table::week()
-## x lubridate::yday()    masks data.table::yday()
-## x lubridate::year()    masks data.table::year()
-## i Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+<pre><code>## ── Attaching core tidyverse packages ─────────────────────────────────────────────────────────────────────── tidyverse 2.0.0 ──
+## ✔ dplyr     1.1.4     ✔ readr     2.1.5
+## ✔ forcats   1.0.0     ✔ stringr   1.5.1
+## ✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+## ✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+## ✔ purrr     1.0.2     
+## ── Conflicts ───────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::between()     masks data.table::between()
+## ✖ dplyr::filter()      masks stats::filter()
+## ✖ dplyr::first()       masks data.table::first()
+## ✖ lubridate::hour()    masks data.table::hour()
+## ✖ lubridate::isoweek() masks data.table::isoweek()
+## ✖ dplyr::lag()         masks stats::lag()
+## ✖ dplyr::last()        masks data.table::last()
+## ✖ lubridate::mday()    masks data.table::mday()
+## ✖ lubridate::minute()  masks data.table::minute()
+## ✖ lubridate::month()   masks data.table::month()
+## ✖ lubridate::quarter() masks data.table::quarter()
+## ✖ lubridate::second()  masks data.table::second()
+## ✖ purrr::transpose()   masks data.table::transpose()
+## ✖ lubridate::wday()    masks data.table::wday()
+## ✖ lubridate::week()    masks data.table::week()
+## ✖ lubridate::yday()    masks data.table::yday()
+## ✖ lubridate::year()    masks data.table::year()
+## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 <pre class="r"><code>library(GenomicRanges)</code></pre>
 <pre><code>## Loading required package: stats4
 ## Loading required package: BiocGenerics
@@ -477,12 +477,12 @@ library(tidyverse)</code></pre>
 ## 
 ## The following objects are masked from &#39;package:base&#39;:
 ## 
-##     Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
-##     as.data.frame, basename, cbind, colnames, dirname, do.call,
-##     duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
-##     lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
-##     pmin.int, rank, rbind, rownames, sapply, setdiff, table, tapply,
-##     union, unique, unsplit, which.max, which.min
+##     anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+##     colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+##     get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+##     match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+##     Position, rank, rbind, Reduce, rownames, sapply, setdiff, table,
+##     tapply, union, unique, unsplit, which.max, which.min
 ## 
 ## Loading required package: S4Vectors
 ## 
@@ -510,7 +510,7 @@ library(tidyverse)</code></pre>
 ## 
 ## The following objects are masked from &#39;package:base&#39;:
 ## 
-##     I, expand.grid, unname
+##     expand.grid, I, unname
 ## 
 ## Loading required package: IRanges
 ## 
@@ -547,14 +547,14 @@ input_dir &lt;- file.path(analysis_dir, &quot;input&quot;)</code></pre>
 <pre class="r"><code>braf_fusions &lt;- read_tsv(fusion_file) %&gt;%
   dplyr::filter(FusionName %in% c(&quot;KIAA1549--BRAF&quot;, &quot;BRAF--KIAA1549&quot;))</code></pre>
 <pre><code>## Rows: 81348 Columns: 22
-## -- Column specification ------------------------------------------------------------------------------------------
+## ── Column specification ───────────────────────────────────────────────────────────────────────────────────────────────────────
 ## Delimiter: &quot;\t&quot;
 ## chr (20): Sample, FusionName, LeftBreakpoint, RightBreakpoint, DomainRetaine...
 ## dbl  (1): caller.count
 ## lgl  (1): reciprocal_exists
 ## 
-## i Use `spec()` to retrieve the full column specification for this data.
-## i Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 <p>Create breakpoint coordinate columns</p>
 <pre class="r"><code>braf_fusions &lt;- braf_fusions %&gt;%
   dplyr::mutate(Chromosome = 7) %&gt;%
@@ -667,7 +667,12 @@ braf_fusions &lt;- braf_fusions %&gt;%
 ## LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so;  LAPACK version 3.10.0
 ## 
 ## locale:
-## [1] C
+##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
 ## 
 ## time zone: Etc/UTC
 ## tzcode source: system (glibc)
@@ -677,35 +682,35 @@ braf_fusions &lt;- braf_fusions %&gt;%
 ## [8] base     
 ## 
 ## other attached packages:
-##  [1] biomaRt_2.60.0       GenomicRanges_1.56.0 GenomeInfoDb_1.40.0 
-##  [4] IRanges_2.38.0       S4Vectors_0.42.0     BiocGenerics_0.50.0 
+##  [1] biomaRt_2.60.1       GenomicRanges_1.56.1 GenomeInfoDb_1.40.1 
+##  [4] IRanges_2.38.1       S4Vectors_0.42.1     BiocGenerics_0.50.0 
 ##  [7] lubridate_1.9.3      forcats_1.0.0        stringr_1.5.1       
 ## [10] dplyr_1.1.4          purrr_1.0.2          readr_2.1.5         
 ## [13] tidyr_1.3.1          tibble_3.2.1         ggplot2_3.5.1       
 ## [16] tidyverse_2.0.0      data.table_1.15.4   
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] KEGGREST_1.44.0         gtable_0.3.5            httr2_1.0.1            
-##  [4] xfun_0.43               bslib_0.7.0             Biobase_2.64.0         
+##  [1] KEGGREST_1.44.1         gtable_0.3.5            httr2_1.0.1            
+##  [4] xfun_0.44               bslib_0.7.0             Biobase_2.64.0         
 ##  [7] tzdb_0.4.0              vctrs_0.6.5             tools_4.4.0            
 ## [10] generics_0.1.3          parallel_4.4.0          curl_5.2.1             
-## [13] fansi_1.0.6             AnnotationDbi_1.66.0    RSQLite_2.3.6          
+## [13] fansi_1.0.6             AnnotationDbi_1.66.0    RSQLite_2.3.7          
 ## [16] blob_1.2.4              pkgconfig_2.0.3         dbplyr_2.5.0           
 ## [19] lifecycle_1.0.4         GenomeInfoDbData_1.2.12 compiler_4.4.0         
-## [22] progress_1.2.3          Biostrings_2.72.0       munsell_0.5.1          
+## [22] progress_1.2.3          Biostrings_2.72.1       munsell_0.5.1          
 ## [25] htmltools_0.5.8.1       sass_0.4.9              yaml_2.3.8             
 ## [28] crayon_1.5.2            pillar_1.9.0            jquerylib_0.1.4        
-## [31] cachem_1.0.8            tidyselect_1.2.1        digest_0.6.35          
-## [34] stringi_1.8.3           rprojroot_2.0.4         fastmap_1.1.1          
+## [31] cachem_1.1.0            tidyselect_1.2.1        digest_0.6.35          
+## [34] stringi_1.8.4           rprojroot_2.0.4         fastmap_1.2.0          
 ## [37] grid_4.4.0              colorspace_2.1-0        cli_3.6.2              
 ## [40] magrittr_2.0.3          utf8_1.2.4              withr_3.0.0            
 ## [43] filelock_1.0.3          rappdirs_0.3.3          prettyunits_1.2.0      
 ## [46] scales_1.3.0            UCSC.utils_1.0.0        bit64_4.0.5            
-## [49] timechange_0.3.0        rmarkdown_2.26          XVector_0.44.0         
+## [49] timechange_0.3.0        rmarkdown_2.27          XVector_0.44.0         
 ## [52] httr_1.4.7              bit_4.0.5               png_0.1-8              
-## [55] hms_1.1.3               memoise_2.0.1           evaluate_0.23          
-## [58] knitr_1.46              BiocFileCache_2.12.0    rlang_1.1.3            
-## [61] glue_1.7.0              DBI_1.2.2               xml2_1.3.6             
+## [55] hms_1.1.3               memoise_2.0.1           evaluate_0.24.0        
+## [58] knitr_1.47              BiocFileCache_2.12.0    rlang_1.1.4            
+## [61] glue_1.7.0              DBI_1.2.3               xml2_1.3.6             
 ## [64] vroom_1.6.5             jsonlite_1.8.8          R6_2.5.1               
 ## [67] zlibbioc_1.50.0</code></pre>
 
