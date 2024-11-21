@@ -62,7 +62,10 @@ ancestry <- ancestry %>%
 
 # filter histologies file to exclude Normal samples
 hist_tumor <- hist %>%
-  filter(sample_type != 'Normal' & experimental_strategy == "WGS") %>%
+  filter(sample_type != 'Normal',
+         experimental_strategy == "WGS",
+         # removed derived cell lines, but keep for pt ids PT_40N7BXSQ and PT_EVQZ62SE since only tumors available
+         (composition != "Derived Cell Line" | Kids_First_Participant_ID %in% c("PT_40N7BXSQ", "PT_EVQZ62SE"))) %>%
   rename('Kids_First_Biospecimen_ID_tumor' = 'Kids_First_Biospecimen_ID')
 
 # read in plot_mapping file to add plot group to results
