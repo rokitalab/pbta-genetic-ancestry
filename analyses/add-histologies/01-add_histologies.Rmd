@@ -62,7 +62,9 @@ ancestry <- ancestry %>%
 
 # filter histologies file to exclude Normal samples
 hist_tumor <- hist %>%
-  filter(sample_type != 'Normal' & experimental_strategy == "WGS") %>%
+  filter(sample_type != 'Normal',
+         experimental_strategy == "WGS",
+         composition != "Derived Cell Line") %>%
   rename('Kids_First_Biospecimen_ID_tumor' = 'Kids_First_Biospecimen_ID')
 
 # read in plot_mapping file to add plot group to results
@@ -129,8 +131,8 @@ ancestry_unique <- ancestry_unique %>%
   )) %>%
   # filter out patients > 40yo (14610 days); PT_7S81MVTV does not have age listed but is confirmed to be >40yo
   dplyr::filter(is.na(age_at_diagnosis_days) |  age_at_diagnosis_days < 14610,
-                Kids_First_Participant_ID != "PT_7S81MVTV")
-
+                Kids_First_Participant_ID != "PT_7S81MVTV") %>%
+  dplyr::filter(!is.na(Kids_First_Biospecimen_ID_tumor))
 ```
 
 

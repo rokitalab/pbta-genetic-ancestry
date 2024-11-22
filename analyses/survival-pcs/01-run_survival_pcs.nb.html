@@ -2906,18 +2906,18 @@ library(ggpubr)</code></pre>
 <!-- rnb-source-begin eyJkYXRhIjoibGlicmFyeSh0aWR5dmVyc2UpIn0= -->
 <pre class="r"><code>library(tidyverse)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-message-begin eyJkYXRhIjoiLS0gQXR0YWNoaW5nIGNvcmUgdGlkeXZlcnNlIHBhY2thZ2VzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gdGlkeXZlcnNlIDIuMC4wIC0tXG52IGRwbHlyICAgICAxLjEuNCAgICAgdiByZWFkciAgICAgMi4xLjVcbnYgZm9yY2F0cyAgIDEuMC4wICAgICB2IHN0cmluZ3IgICAxLjUuMVxudiBsdWJyaWRhdGUgMS45LjMgICAgIHYgdGliYmxlICAgIDMuMi4xXG52IHB1cnJyICAgICAxLjAuMiAgICAgdiB0aWR5ciAgICAgMS4zLjFcbiJ9 -->
-<pre><code>-- Attaching core tidyverse packages ---------------------------------------------------------------------- tidyverse 2.0.0 --
-v dplyr     1.1.4     v readr     2.1.5
-v forcats   1.0.0     v stringr   1.5.1
-v lubridate 1.9.3     v tibble    3.2.1
-v purrr     1.0.2     v tidyr     1.3.1</code></pre>
+<!-- rnb-message-begin eyJkYXRhIjoi4pSA4pSAIEF0dGFjaGluZyBjb3JlIHRpZHl2ZXJzZSBwYWNrYWdlcyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlIDIuMC4wIOKUgOKUgFxu4pyUIGRwbHlyICAgICAxLjEuNCAgICAg4pyUIHJlYWRyICAgICAyLjEuNVxu4pyUIGZvcmNhdHMgICAxLjAuMCAgICAg4pyUIHN0cmluZ3IgICAxLjUuMVxu4pyUIGx1YnJpZGF0ZSAxLjkuMyAgICAg4pyUIHRpYmJsZSAgICAzLjIuMVxu4pyUIHB1cnJyICAgICAxLjAuMiAgICAg4pyUIHRpZHlyICAgICAxLjMuMVxuIn0= -->
+<pre><code>── Attaching core tidyverse packages ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.1</code></pre>
 <!-- rnb-message-end -->
-<!-- rnb-message-begin eyJkYXRhIjoiLS0gQ29uZmxpY3RzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gdGlkeXZlcnNlX2NvbmZsaWN0cygpIC0tXG54IGRwbHlyOjpmaWx0ZXIoKSBtYXNrcyBzdGF0czo6ZmlsdGVyKClcbnggZHBseXI6OmxhZygpICAgIG1hc2tzIHN0YXRzOjpsYWcoKVxuaSBVc2UgdGhlIGNvbmZsaWN0ZWQgcGFja2FnZSAoPGh0dHA6Ly9jb25mbGljdGVkLnItbGliLm9yZy8+KSB0byBmb3JjZSBhbGwgY29uZmxpY3RzIHRvIGJlY29tZSBlcnJvcnNcbiJ9 -->
-<pre><code>-- Conflicts ---------------------------------------------------------------------------------------- tidyverse_conflicts() --
-x dplyr::filter() masks stats::filter()
-x dplyr::lag()    masks stats::lag()
-i Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+<!-- rnb-message-begin eyJkYXRhIjoi4pSA4pSAIENvbmZsaWN0cyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAgdGlkeXZlcnNlX2NvbmZsaWN0cygpIOKUgOKUgFxu4pyWIGRwbHlyOjpmaWx0ZXIoKSBtYXNrcyBzdGF0czo6ZmlsdGVyKClcbuKcliBkcGx5cjo6bGFnKCkgICAgbWFza3Mgc3RhdHM6OmxhZygpXG7ihLkgVXNlIHRoZSBjb25mbGljdGVkIHBhY2thZ2UgKDxodHRwOi8vY29uZmxpY3RlZC5yLWxpYi5vcmcvPikgdG8gZm9yY2UgYWxsIGNvbmZsaWN0cyB0byBiZWNvbWUgZXJyb3JzXG4ifQ== -->
+<pre><code>── Conflicts ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 <!-- rnb-message-end -->
 <!-- rnb-source-begin eyJkYXRhIjoibGlicmFyeShDb21wbGV4SGVhdG1hcCkifQ== -->
 <pre class="r"><code>library(ComplexHeatmap)</code></pre>
@@ -3027,9 +3027,9 @@ if (!dir.exists(plots_dir)) {
 <!-- rnb-source-begin eyJkYXRhIjoibWV0YWRhdGEgPC0gcmVhZHI6OnJlYWRfdHN2KGFuY2VzdHJ5X2ZpbGUpIn0= -->
 <pre class="r"><code>metadata &lt;- readr::read_tsv(ancestry_file)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-message-begin eyJkYXRhIjoiUm93czogMTQ1NCBDb2x1bW5zOiA0MVxu4pSA4pSAIENvbHVtbiBzcGVjaWZpY2F0aW9uIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgFxuRGVsaW1pdGVyOiBcIlxcdFwiXG5jaHIgKDIyKTogS2lkc19GaXJzdF9CaW9zcGVjaW1lbl9JRCwgcHJlZGljdGVkX2FuY2VzdHJ5LCBLaWRzX0ZpcnN0X1BhcnRpY2lwLi4uXG5kYmwgKDE4KTogRUFTX3Byb2IsIEFGUl9wcm9iLCBBTVJfcHJvYiwgU0FTX3Byb2IsIEVVUl9wcm9iLCBQQzEsIFBDMiwgUEMzLCBQLi4uXG5sZ2wgICgxKTogZ2l2ZW5fYW5jZXN0cnlcblxu4oS5IFVzZSBgc3BlYygpYCB0byByZXRyaWV2ZSB0aGUgZnVsbCBjb2x1bW4gc3BlY2lmaWNhdGlvbiBmb3IgdGhpcyBkYXRhLlxu4oS5IFNwZWNpZnkgdGhlIGNvbHVtbiB0eXBlcyBvciBzZXQgYHNob3dfY29sX3R5cGVzID0gRkFMU0VgIHRvIHF1aWV0IHRoaXMgbWVzc2FnZS5cbiJ9 -->
-<pre><code>Rows: 1454 Columns: 41
-── Column specification ──────────────────────────────────────────────────────────────────────────────────────────────────────
+<!-- rnb-message-begin eyJkYXRhIjoiUm93czogMTQ1MiBDb2x1bW5zOiA0MVxu4pSA4pSAIENvbHVtbiBzcGVjaWZpY2F0aW9uIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgFxuRGVsaW1pdGVyOiBcIlxcdFwiXG5jaHIgKDIyKTogS2lkc19GaXJzdF9CaW9zcGVjaW1lbl9JRCwgcHJlZGljdGVkX2FuY2VzdHJ5LCBLaWRzX0ZpcnN0X1BhcnRpY2lwLi4uXG5kYmwgKDE4KTogRUFTX3Byb2IsIEFGUl9wcm9iLCBBTVJfcHJvYiwgU0FTX3Byb2IsIEVVUl9wcm9iLCBQQzEsIFBDMiwgUEMzLCBQLi4uXG5sZ2wgICgxKTogZ2l2ZW5fYW5jZXN0cnlcblxu4oS5IFVzZSBgc3BlYygpYCB0byByZXRyaWV2ZSB0aGUgZnVsbCBjb2x1bW4gc3BlY2lmaWNhdGlvbiBmb3IgdGhpcyBkYXRhLlxu4oS5IFNwZWNpZnkgdGhlIGNvbHVtbiB0eXBlcyBvciBzZXQgYHNob3dfY29sX3R5cGVzID0gRkFMU0VgIHRvIHF1aWV0IHRoaXMgbWVzc2FnZS5cbiJ9 -->
+<pre><code>Rows: 1452 Columns: 41
+── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 Delimiter: &quot;\t&quot;
 chr (22): Kids_First_Biospecimen_ID, predicted_ancestry, Kids_First_Particip...
 dbl (18): EAS_prob, AFR_prob, AMR_prob, SAS_prob, EUR_prob, PC1, PC2, PC3, P...
@@ -4390,7 +4390,7 @@ Testing model: survival::Surv(EFS_days, EFS_status) ~ PC_group with kap.meier</c
 <!-- rnb-source-begin eyJkYXRhIjoic2Vzc2lvbkluZm8oKSJ9 -->
 <pre class="r"><code>sessionInfo()</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUiB2ZXJzaW9uIDQuNC4wICgyMDI0LTA0LTI0KVxuUGxhdGZvcm06IHg4Nl82NC1wYy1saW51eC1nbnVcblJ1bm5pbmcgdW5kZXI6IFVidW50dSAyMi4wNC40IExUU1xuXG5NYXRyaXggcHJvZHVjdHM6IGRlZmF1bHRcbkJMQVM6ICAgL3Vzci9saWIveDg2XzY0LWxpbnV4LWdudS9vcGVuYmxhcy1wdGhyZWFkL2xpYmJsYXMuc28uMyBcbkxBUEFDSzogL3Vzci9saWIveDg2XzY0LWxpbnV4LWdudS9vcGVuYmxhcy1wdGhyZWFkL2xpYm9wZW5ibGFzcC1yMC4zLjIwLnNvOyAgTEFQQUNLIHZlcnNpb24gMy4xMC4wXG5cbmxvY2FsZTpcbiBbMV0gTENfQ1RZUEU9ZW5fVVMuVVRGLTggICAgTENfTlVNRVJJQz1DICAgICAgICAgICAgTENfVElNRT1lbl9VUy5VVEYtOCAgICBcbiBbNF0gTENfQ09MTEFURT1lbl9VUy5VVEYtOCAgTENfTU9ORVRBUlk9ZW5fVVMuVVRGLTggTENfTUVTU0FHRVM9QyAgICAgICAgICBcbiBbN10gTENfUEFQRVI9QyAgICAgICAgICAgICAgTENfTkFNRT1DICAgICAgICAgICAgICAgTENfQUREUkVTUz1DICAgICAgICAgICBcblsxMF0gTENfVEVMRVBIT05FPUMgICAgICAgICAgTENfTUVBU1VSRU1FTlQ9QyAgICAgICAgTENfSURFTlRJRklDQVRJT049QyAgICBcblxudGltZSB6b25lOiBFdGMvVVRDXG50emNvZGUgc291cmNlOiBzeXN0ZW0gKGdsaWJjKVxuXG5hdHRhY2hlZCBiYXNlIHBhY2thZ2VzOlxuWzFdIGdyaWQgICAgICBzdGF0cyAgICAgZ3JhcGhpY3MgIGdyRGV2aWNlcyB1dGlscyAgICAgZGF0YXNldHMgIG1ldGhvZHMgIFxuWzhdIGJhc2UgICAgIFxuXG5vdGhlciBhdHRhY2hlZCBwYWNrYWdlczpcbiBbMV0gc3Vydm1pbmVyXzAuNC45ICAgICAgIGNpcmNsaXplXzAuNC4xNiAgICAgICBDb21wbGV4SGVhdG1hcF8yLjIwLjBcbiBbNF0gbHVicmlkYXRlXzEuOS4zICAgICAgIGZvcmNhdHNfMS4wLjAgICAgICAgICBzdHJpbmdyXzEuNS4xICAgICAgICBcbiBbN10gZHBseXJfMS4xLjQgICAgICAgICAgIHB1cnJyXzEuMC4yICAgICAgICAgICByZWFkcl8yLjEuNSAgICAgICAgICBcblsxMF0gdGlkeXJfMS4zLjEgICAgICAgICAgIHRpYmJsZV8zLjIuMSAgICAgICAgICB0aWR5dmVyc2VfMi4wLjAgICAgICBcblsxM10gZ2dwdWJyXzAuNi4wICAgICAgICAgIGdncGxvdDJfMy41LjEgICAgICAgICBzdXJ2aXZhbF8zLjYtNCAgICAgICBcblxubG9hZGVkIHZpYSBhIG5hbWVzcGFjZSAoYW5kIG5vdCBhdHRhY2hlZCk6XG4gWzFdIHRpZHlzZWxlY3RfMS4yLjEgICAgZmFzdG1hcF8xLjEuMSAgICAgICBkaWdlc3RfMC42LjM1ICAgICAgXG4gWzRdIHRpbWVjaGFuZ2VfMC4zLjAgICAgbGlmZWN5Y2xlXzEuMC40ICAgICBjbHVzdGVyXzIuMS42ICAgICAgXG4gWzddIG1hZ3JpdHRyXzIuMC4zICAgICAgY29tcGlsZXJfNC40LjAgICAgICBybGFuZ18xLjEuMyAgICAgICAgXG5bMTBdIHNhc3NfMC40LjkgICAgICAgICAgdG9vbHNfNC40LjAgICAgICAgICB1dGY4XzEuMi40ICAgICAgICAgXG5bMTNdIHlhbWxfMi4zLjggICAgICAgICAgZGF0YS50YWJsZV8xLjE1LjQgICBrbml0cl8xLjQ2ICAgICAgICAgXG5bMTZdIGdnc2lnbmlmXzAuNi40ICAgICAgYml0XzQuMC41ICAgICAgICAgICBSQ29sb3JCcmV3ZXJfMS4xLTMgXG5bMTldIGFiaW5kXzEuNC01ICAgICAgICAgd2l0aHJfMy4wLjAgICAgICAgICBCaW9jR2VuZXJpY3NfMC41MC4wXG5bMjJdIHN0YXRzNF80LjQuMCAgICAgICAgZmFuc2lfMS4wLjYgICAgICAgICB4dGFibGVfMS44LTQgICAgICAgXG5bMjVdIGNvbG9yc3BhY2VfMi4xLTAgICAgc2NhbGVzXzEuMy4wICAgICAgICBpdGVyYXRvcnNfMS4wLjE0ICAgXG5bMjhdIGNsaV8zLjYuMiAgICAgICAgICAgcm1hcmtkb3duXzIuMjYgICAgICBjcmF5b25fMS41LjIgICAgICAgXG5bMzFdIGdlbmVyaWNzXzAuMS4zICAgICAga20uY2lfMC41LTYgICAgICAgICB0emRiXzAuNC4wICAgICAgICAgXG5bMzRdIHJqc29uXzAuMi4yMSAgICAgICAgY2FjaGVtXzEuMC44ICAgICAgICBzcGxpbmVzXzQuNC4wICAgICAgXG5bMzddIHBhcmFsbGVsXzQuNC4wICAgICAgc3Vydk1pc2NfMC41LjYgICAgICBtYXRyaXhTdGF0c18xLjMuMCAgXG5bNDBdIHZjdHJzXzAuNi41ICAgICAgICAgTWF0cml4XzEuNy0wICAgICAgICBqc29ubGl0ZV8xLjguOCAgICAgXG5bNDNdIGNhckRhdGFfMy4wLTUgICAgICAgY2FyXzMuMS0yICAgICAgICAgICBJUmFuZ2VzXzIuMzguMCAgICAgXG5bNDZdIGhtc18xLjEuMyAgICAgICAgICAgR2V0b3B0TG9uZ18xLjAuNSAgICBTNFZlY3RvcnNfMC40Mi4wICAgXG5bNDldIGJpdDY0XzQuMC41ICAgICAgICAgcnN0YXRpeF8wLjcuMiAgICAgICBjbHVlXzAuMy02NSAgICAgICAgXG5bNTJdIGZvcmVhY2hfMS41LjIgICAgICAganF1ZXJ5bGliXzAuMS40ICAgICBnbHVlXzEuNy4wICAgICAgICAgXG5bNTVdIGNvZGV0b29sc18wLjItMjAgICAgc3RyaW5naV8xLjguMyAgICAgICBndGFibGVfMC4zLjUgICAgICAgXG5bNThdIHNoYXBlXzEuNC42LjEgICAgICAgbXVuc2VsbF8wLjUuMSAgICAgICBwaWxsYXJfMS45LjAgICAgICAgXG5bNjFdIGh0bWx0b29sc18wLjUuOC4xICAgUjZfMi41LjEgICAgICAgICAgICBLTXN1cnZfMC4xLTUgICAgICAgXG5bNjRdIGRvUGFyYWxsZWxfMS4wLjE3ICAgcnByb2pyb290XzIuMC40ICAgICB2cm9vbV8xLjYuNSAgICAgICAgXG5bNjddIGV2YWx1YXRlXzAuMjMgICAgICAgbGF0dGljZV8wLjIyLTYgICAgICBwbmdfMC4xLTggICAgICAgICAgXG5bNzBdIGJhY2twb3J0c18xLjQuMSAgICAgYnJvb21fMS4wLjUgICAgICAgICBic2xpYl8wLjcuMCAgICAgICAgXG5bNzNdIGdyaWRFeHRyYV8yLjMgICAgICAgeGZ1bl8wLjQzICAgICAgICAgICB6b29fMS44LTEyICAgICAgICAgXG5bNzZdIHBrZ2NvbmZpZ18yLjAuMyAgICAgR2xvYmFsT3B0aW9uc18wLjEuMlxuIn0= -->
+<!-- rnb-output-begin eyJkYXRhIjoiUiB2ZXJzaW9uIDQuNC4wICgyMDI0LTA0LTI0KVxuUGxhdGZvcm06IHg4Nl82NC1wYy1saW51eC1nbnVcblJ1bm5pbmcgdW5kZXI6IFVidW50dSAyMi4wNC40IExUU1xuXG5NYXRyaXggcHJvZHVjdHM6IGRlZmF1bHRcbkJMQVM6ICAgL3Vzci9saWIveDg2XzY0LWxpbnV4LWdudS9vcGVuYmxhcy1wdGhyZWFkL2xpYmJsYXMuc28uMyBcbkxBUEFDSzogL3Vzci9saWIveDg2XzY0LWxpbnV4LWdudS9vcGVuYmxhcy1wdGhyZWFkL2xpYm9wZW5ibGFzcC1yMC4zLjIwLnNvOyAgTEFQQUNLIHZlcnNpb24gMy4xMC4wXG5cbmxvY2FsZTpcbiBbMV0gTENfQ1RZUEU9ZW5fVVMuVVRGLTggICAgICAgTENfTlVNRVJJQz1DICAgICAgICAgICAgICBcbiBbM10gTENfVElNRT1lbl9VUy5VVEYtOCAgICAgICAgTENfQ09MTEFURT1lbl9VUy5VVEYtOCAgICBcbiBbNV0gTENfTU9ORVRBUlk9ZW5fVVMuVVRGLTggICAgTENfTUVTU0FHRVM9ZW5fVVMuVVRGLTggICBcbiBbN10gTENfUEFQRVI9ZW5fVVMuVVRGLTggICAgICAgTENfTkFNRT1DICAgICAgICAgICAgICAgICBcbiBbOV0gTENfQUREUkVTUz1DICAgICAgICAgICAgICAgTENfVEVMRVBIT05FPUMgICAgICAgICAgICBcblsxMV0gTENfTUVBU1VSRU1FTlQ9ZW5fVVMuVVRGLTggTENfSURFTlRJRklDQVRJT049QyAgICAgICBcblxudGltZSB6b25lOiBFdGMvVVRDXG50emNvZGUgc291cmNlOiBzeXN0ZW0gKGdsaWJjKVxuXG5hdHRhY2hlZCBiYXNlIHBhY2thZ2VzOlxuWzFdIGdyaWQgICAgICBzdGF0cyAgICAgZ3JhcGhpY3MgIGdyRGV2aWNlcyB1dGlscyAgICAgZGF0YXNldHMgIG1ldGhvZHMgIFxuWzhdIGJhc2UgICAgIFxuXG5vdGhlciBhdHRhY2hlZCBwYWNrYWdlczpcbiBbMV0gc3Vydm1pbmVyXzAuNC45ICAgICAgIGNpcmNsaXplXzAuNC4xNiAgICAgICBDb21wbGV4SGVhdG1hcF8yLjIwLjBcbiBbNF0gbHVicmlkYXRlXzEuOS4zICAgICAgIGZvcmNhdHNfMS4wLjAgICAgICAgICBzdHJpbmdyXzEuNS4xICAgICAgICBcbiBbN10gZHBseXJfMS4xLjQgICAgICAgICAgIHB1cnJyXzEuMC4yICAgICAgICAgICByZWFkcl8yLjEuNSAgICAgICAgICBcblsxMF0gdGlkeXJfMS4zLjEgICAgICAgICAgIHRpYmJsZV8zLjIuMSAgICAgICAgICB0aWR5dmVyc2VfMi4wLjAgICAgICBcblsxM10gZ2dwdWJyXzAuNi4wICAgICAgICAgIGdncGxvdDJfMy41LjEgICAgICAgICBzdXJ2aXZhbF8zLjctMCAgICAgICBcblxubG9hZGVkIHZpYSBhIG5hbWVzcGFjZSAoYW5kIG5vdCBhdHRhY2hlZCk6XG4gWzFdIHRpZHlzZWxlY3RfMS4yLjEgICAgZmFzdG1hcF8xLjIuMCAgICAgICBkaWdlc3RfMC42LjM1ICAgICAgXG4gWzRdIHRpbWVjaGFuZ2VfMC4zLjAgICAgbGlmZWN5Y2xlXzEuMC40ICAgICBjbHVzdGVyXzIuMS42ICAgICAgXG4gWzddIG1hZ3JpdHRyXzIuMC4zICAgICAgY29tcGlsZXJfNC40LjAgICAgICBybGFuZ18xLjEuNCAgICAgICAgXG5bMTBdIHNhc3NfMC40LjkgICAgICAgICAgdG9vbHNfNC40LjAgICAgICAgICB1dGY4XzEuMi40ICAgICAgICAgXG5bMTNdIHlhbWxfMi4zLjggICAgICAgICAgZGF0YS50YWJsZV8xLjE1LjQgICBrbml0cl8xLjQ3ICAgICAgICAgXG5bMTZdIGdnc2lnbmlmXzAuNi40ICAgICAgYml0XzQuMC41ICAgICAgICAgICBSQ29sb3JCcmV3ZXJfMS4xLTMgXG5bMTldIGFiaW5kXzEuNC01ICAgICAgICAgd2l0aHJfMy4wLjAgICAgICAgICBCaW9jR2VuZXJpY3NfMC41MC4wXG5bMjJdIHN0YXRzNF80LjQuMCAgICAgICAgZmFuc2lfMS4wLjYgICAgICAgICB4dGFibGVfMS44LTQgICAgICAgXG5bMjVdIGNvbG9yc3BhY2VfMi4xLTAgICAgc2NhbGVzXzEuMy4wICAgICAgICBpdGVyYXRvcnNfMS4wLjE0ICAgXG5bMjhdIGNsaV8zLjYuMiAgICAgICAgICAgcm1hcmtkb3duXzIuMjcgICAgICBjcmF5b25fMS41LjIgICAgICAgXG5bMzFdIGdlbmVyaWNzXzAuMS4zICAgICAga20uY2lfMC41LTYgICAgICAgICB0emRiXzAuNC4wICAgICAgICAgXG5bMzRdIHJqc29uXzAuMi4yMSAgICAgICAgY2FjaGVtXzEuMS4wICAgICAgICBzcGxpbmVzXzQuNC4wICAgICAgXG5bMzddIHBhcmFsbGVsXzQuNC4wICAgICAgc3Vydk1pc2NfMC41LjYgICAgICBtYXRyaXhTdGF0c18xLjMuMCAgXG5bNDBdIHZjdHJzXzAuNi41ICAgICAgICAgTWF0cml4XzEuNy0wICAgICAgICBqc29ubGl0ZV8xLjguOCAgICAgXG5bNDNdIGNhckRhdGFfMy4wLTUgICAgICAgY2FyXzMuMS0yICAgICAgICAgICBJUmFuZ2VzXzIuMzguMSAgICAgXG5bNDZdIGhtc18xLjEuMyAgICAgICAgICAgR2V0b3B0TG9uZ18xLjAuNSAgICBTNFZlY3RvcnNfMC40Mi4xICAgXG5bNDldIGJpdDY0XzQuMC41ICAgICAgICAgcnN0YXRpeF8wLjcuMiAgICAgICBjbHVlXzAuMy02NSAgICAgICAgXG5bNTJdIGZvcmVhY2hfMS41LjIgICAgICAganF1ZXJ5bGliXzAuMS40ICAgICBnbHVlXzEuNy4wICAgICAgICAgXG5bNTVdIGNvZGV0b29sc18wLjItMjAgICAgc3RyaW5naV8xLjguNCAgICAgICBndGFibGVfMC4zLjUgICAgICAgXG5bNThdIHNoYXBlXzEuNC42LjEgICAgICAgbXVuc2VsbF8wLjUuMSAgICAgICBwaWxsYXJfMS45LjAgICAgICAgXG5bNjFdIGh0bWx0b29sc18wLjUuOC4xICAgUjZfMi41LjEgICAgICAgICAgICBLTXN1cnZfMC4xLTUgICAgICAgXG5bNjRdIGRvUGFyYWxsZWxfMS4wLjE3ICAgcnByb2pyb290XzIuMC40ICAgICB2cm9vbV8xLjYuNSAgICAgICAgXG5bNjddIGV2YWx1YXRlXzAuMjQuMCAgICAgbGF0dGljZV8wLjIyLTYgICAgICBwbmdfMC4xLTggICAgICAgICAgXG5bNzBdIGJhY2twb3J0c18xLjUuMCAgICAgYnJvb21fMS4wLjYgICAgICAgICBic2xpYl8wLjcuMCAgICAgICAgXG5bNzNdIGdyaWRFeHRyYV8yLjMgICAgICAgeGZ1bl8wLjQ0ICAgICAgICAgICB6b29fMS44LTEyICAgICAgICAgXG5bNzZdIHBrZ2NvbmZpZ18yLjAuMyAgICAgR2xvYmFsT3B0aW9uc18wLjEuMlxuIn0= -->
 <pre><code>R version 4.4.0 (2024-04-24)
 Platform: x86_64-pc-linux-gnu
 Running under: Ubuntu 22.04.4 LTS
@@ -4400,10 +4400,12 @@ BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
 LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.20.so;  LAPACK version 3.10.0
 
 locale:
- [1] LC_CTYPE=en_US.UTF-8    LC_NUMERIC=C            LC_TIME=en_US.UTF-8    
- [4] LC_COLLATE=en_US.UTF-8  LC_MONETARY=en_US.UTF-8 LC_MESSAGES=C          
- [7] LC_PAPER=C              LC_NAME=C               LC_ADDRESS=C           
-[10] LC_TELEPHONE=C          LC_MEASUREMENT=C        LC_IDENTIFICATION=C    
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
 
 time zone: Etc/UTC
 tzcode source: system (glibc)
@@ -4417,34 +4419,34 @@ other attached packages:
  [4] lubridate_1.9.3       forcats_1.0.0         stringr_1.5.1        
  [7] dplyr_1.1.4           purrr_1.0.2           readr_2.1.5          
 [10] tidyr_1.3.1           tibble_3.2.1          tidyverse_2.0.0      
-[13] ggpubr_0.6.0          ggplot2_3.5.1         survival_3.6-4       
+[13] ggpubr_0.6.0          ggplot2_3.5.1         survival_3.7-0       
 
 loaded via a namespace (and not attached):
- [1] tidyselect_1.2.1    fastmap_1.1.1       digest_0.6.35      
+ [1] tidyselect_1.2.1    fastmap_1.2.0       digest_0.6.35      
  [4] timechange_0.3.0    lifecycle_1.0.4     cluster_2.1.6      
- [7] magrittr_2.0.3      compiler_4.4.0      rlang_1.1.3        
+ [7] magrittr_2.0.3      compiler_4.4.0      rlang_1.1.4        
 [10] sass_0.4.9          tools_4.4.0         utf8_1.2.4         
-[13] yaml_2.3.8          data.table_1.15.4   knitr_1.46         
+[13] yaml_2.3.8          data.table_1.15.4   knitr_1.47         
 [16] ggsignif_0.6.4      bit_4.0.5           RColorBrewer_1.1-3 
 [19] abind_1.4-5         withr_3.0.0         BiocGenerics_0.50.0
 [22] stats4_4.4.0        fansi_1.0.6         xtable_1.8-4       
 [25] colorspace_2.1-0    scales_1.3.0        iterators_1.0.14   
-[28] cli_3.6.2           rmarkdown_2.26      crayon_1.5.2       
+[28] cli_3.6.2           rmarkdown_2.27      crayon_1.5.2       
 [31] generics_0.1.3      km.ci_0.5-6         tzdb_0.4.0         
-[34] rjson_0.2.21        cachem_1.0.8        splines_4.4.0      
+[34] rjson_0.2.21        cachem_1.1.0        splines_4.4.0      
 [37] parallel_4.4.0      survMisc_0.5.6      matrixStats_1.3.0  
 [40] vctrs_0.6.5         Matrix_1.7-0        jsonlite_1.8.8     
-[43] carData_3.0-5       car_3.1-2           IRanges_2.38.0     
-[46] hms_1.1.3           GetoptLong_1.0.5    S4Vectors_0.42.0   
+[43] carData_3.0-5       car_3.1-2           IRanges_2.38.1     
+[46] hms_1.1.3           GetoptLong_1.0.5    S4Vectors_0.42.1   
 [49] bit64_4.0.5         rstatix_0.7.2       clue_0.3-65        
 [52] foreach_1.5.2       jquerylib_0.1.4     glue_1.7.0         
-[55] codetools_0.2-20    stringi_1.8.3       gtable_0.3.5       
+[55] codetools_0.2-20    stringi_1.8.4       gtable_0.3.5       
 [58] shape_1.4.6.1       munsell_0.5.1       pillar_1.9.0       
 [61] htmltools_0.5.8.1   R6_2.5.1            KMsurv_0.1-5       
 [64] doParallel_1.0.17   rprojroot_2.0.4     vroom_1.6.5        
-[67] evaluate_0.23       lattice_0.22-6      png_0.1-8          
-[70] backports_1.4.1     broom_1.0.5         bslib_0.7.0        
-[73] gridExtra_2.3       xfun_0.43           zoo_1.8-12         
+[67] evaluate_0.24.0     lattice_0.22-6      png_0.1-8          
+[70] backports_1.5.0     broom_1.0.6         bslib_0.7.0        
+[73] gridExtra_2.3       xfun_0.44           zoo_1.8-12         
 [76] pkgconfig_2.0.3     GlobalOptions_0.1.2</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->

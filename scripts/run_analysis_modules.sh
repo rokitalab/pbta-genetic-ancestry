@@ -28,6 +28,11 @@ echo "Run survival"
 cd ${analyses_dir}/survival
 bash run_module.sh
 
+# Run survival analysis module
+echo "Run survival-pcs"
+cd ${analyses_dir}/survival-pcs
+bash run_module.sh
+
 # Run BRAF breakpoint analysis module
 echo "Run BRAF fusion breakpoint analysis"
 cd ${analyses_dir}/braf-fusions
