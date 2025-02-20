@@ -2,7 +2,7 @@
 
 Ryan J. Corbett, Cricket C. Gullickson, Zhuangzhuang Geng, Miguel A. Brown, Bo Zhang, Chuwei Zhong, Nicholas Van Kuren, Antonia Chroni, Christopher Blackden, Ammar S. Naqvi, Alexa Plisiewicz, Sean McHugh, Emmett Drake, Kaitlin Lehmann, Tom B. Davidson, Michael Prados, Phillip B. Storm, Adam C. Resnick, Angela J. Waanders, Sebastian M. Waszak, Sabine Mueller, Jo Lynne Rokita, Cassie Kline
 
-Preprint available on [MedRxiv](https://www.medrxiv.org/content/10.1101/2024.06.14.24308885v1).
+This manuscript has been [published](https://academic.oup.com/neuro-oncology/advance-article/doi/10.1093/neuonc/noaf017/7976861?login=true) and the repository is now read-only. 
 
 Note: this repository is a continuation of the work started at the Center for Data-Driven Discovery and the Center for Childhood Cancer Research at CHOP.
 For issue and pull request history, please visit https://github.com/d3b-center/pbta-ancestry.
@@ -39,4 +39,4 @@ bash download_data.sh
 
 ### Contact
 
-For questions, please submit an issue or send an email to Ryan Corbett ([@rjcorb](https://github.com/rjcorb)): corbettr@chop.edu
+For questions, please submit an issue.
